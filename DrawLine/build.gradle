@@ -1,20 +1,11 @@
 plugins {
     id 'com.android.library'
    // id 'com.github.dcendents.android-maven'
-    id 'maven-publish'
+  //  id 'maven-publish'
 }
 group='moon.dev'
 version='1.0'
 
-project.afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-            }
-        }
-    }
-}
 android {
     compileSdk 31
 
