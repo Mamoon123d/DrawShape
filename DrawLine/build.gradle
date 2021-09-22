@@ -1,7 +1,9 @@
 plugins {
     id 'com.android.library'
+  //  id 'com.github.dcendents.android-maven'
 }
-
+group='moon.dev'
+version='1.0'
 android {
     compileSdk 31
 
@@ -17,7 +19,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
